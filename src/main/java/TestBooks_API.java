@@ -10,7 +10,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.*;
 
-public class test_Books_API {
+public class TestBooks_API {
     String baseURL = "https://simple-books-api.glitch.me";
     public static String token;
 //    String name = "Postman";
