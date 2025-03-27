@@ -32,6 +32,7 @@ public class TestBooks_API {
 
             JsonPath js = new JsonPath(AuthroziationResponse.asString());
             token = js.getString("acessToken");
+            System.out.println("********");
         }
     }
 }
