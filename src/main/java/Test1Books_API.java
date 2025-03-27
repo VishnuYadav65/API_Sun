@@ -10,13 +10,13 @@ import java.util.List;
 
 import static io.restassured.RestAssured.*;
 
-public class TestBooks_API {
+public class Test1Books_API {
     String baseURL = "https://simple-books-api.glitch.me";
     public static String token;
-//    String name = "Postman";
-//    String email = "valentin\"+Math.random()+\"@example.com";
+
     @Test
     public void authorization() throws CsvValidationException, IOException {
+
 
         Reusablecomponents reusable = new Reusablecomponents();
         List data = reusable.getData();

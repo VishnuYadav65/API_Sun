@@ -18,7 +18,7 @@ public class TestBooks_API {
     @Test
     public void authorization() throws CsvValidationException, IOException {
 
-        Reusablecomponents reusable = new Reusablecomponents();
+        Reusablecomponents1 reusable = new Reusablecomponents1();
         List data = reusable.getData();
 
 

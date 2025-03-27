@@ -5,8 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
-public class Reusablecomponents {
+public class Reusablecomponents1 {
 
 
 
@@ -20,8 +21,11 @@ public class Reusablecomponents {
         reader.readNext(); //skip header
         String[] line;
         while ((line=reader.readNext()) != null) {
-            System.out.println(line.length);
-            AuthPojo pojo=new AuthPojo(line[0],line[1]);
+            Random random = new Random();
+            int randomNumber = random.nextInt(9000) + 1000;
+            String email = line[1].replace("@gmail.com",randomNumber+"9@gmail.com");
+            System.out.println(email+"--------------------------------------");
+            AuthPojo pojo=new AuthPojo(line[0],email);
             list.add(pojo);
         }
         for (Object l:list) {
